@@ -1,0 +1,129 @@
+﻿@using WebShop.PL.Models
+@model RegisterViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Sign Up";
+
+
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="~/Content/AdminCss.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="wrapper fadeInDown">
+            <h4 style="color:red;font-family:'Palatino Linotype'">
+                @*  *@
+                @ViewBag.DoesnExist
+            </h4>
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="~/Logo/Sign_up.png" id="icon" alt="User Icon" />
+                </div>
+
+                <!-- Login Form -->
+                <form>
+                    @Html.TextBoxFor(u => u.FirstName, new { placeholder = "First name", @class = "fadeIn second", id = "login" })<br />
+                    @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    @Html.TextBoxFor(u => u.LastName, new { placeholder = "Last name", @class = "fadeIn second", id = "login" })<br />
+                    @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    @Html.TextBoxFor(u => u.PhoneNumber, new { placeholder = "Phone number", @class = "fadeIn second", id = "login" })<br />
+                    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    @Html.TextBoxFor(u => u.Email, new { placeholder = "Email", @class = "fadeIn second", id = "login" })<br />
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    @Html.TextBoxFor(p => p.Password, new { placeholder = "Password", @class = "fadeIn third", id = "password" })<br />
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    @Html.TextBoxFor(u => u.ConfirmPassword, new { placeholder = "Confirm password",  @class = "fadeIn second", id = "login" })<br />
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger", @style = "font-size:smaller" })
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div  id="formFooter">
+                    @Html.ActionLink("Back to sign in", "Login", "Account", null, new { @class = "underlineHover" })
+                </div>
+
+            </div>
+        </div>
+    }
+    <style>
+    </style>
+</body>
+</html>
+
+
+
+
+
+
+
+@*@model WebShop.PL.Models.RegisterViewModel
+    @{
+        ViewBag.Title = "Register";
+    }
+
+    <h2>@ViewBag.Title.</h2>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>Create a new account.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register" />
+            </div>
+        </div>
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
