@@ -1,0 +1,6 @@
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.BLL.dll
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.BLL.pdb
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.dll
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.pdb
