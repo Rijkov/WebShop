@@ -12,6 +12,11 @@ namespace WebShop.DAL.UOF
         CategoryRepository categoryRepo;
         ShopCartRepository shopCartRepo;
 
+        public UnitOfWork(string s)
+        {
+            db = new EF.DataContext(s);
+        }
+
         public IRepository<Product> Products
         {
             get

@@ -67,7 +67,7 @@ namespace WebShop.DAL.Repositories
             db.Entry(entity).State = EntityState.Modified;
         }
 
-        public async Task Update(int id)
+        public async Task UpdateAsync(int id)
         {
             db.Entry(await db.ShopCarts.FindAsync(id)).State = EntityState.Modified;
             await db.SaveChangesAsync();

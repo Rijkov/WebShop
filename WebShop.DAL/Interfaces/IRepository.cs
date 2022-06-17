@@ -10,7 +10,7 @@
         IQueryable<IEntity> Read();
         Task<System.Collections.Generic.List<IEntity>> ReadAsync();
         void Update(IEntity entity);
-        Task Update(int id);
+        Task UpdateAsync(int id);
         void Delete(int id);
         Task DeleteAsync(int id);
         IEntity Get(int id);

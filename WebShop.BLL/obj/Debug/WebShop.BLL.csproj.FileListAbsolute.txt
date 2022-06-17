@@ -1,6 +1,15 @@
 C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.BLL.dll
 C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.BLL.pdb
-C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csprojAssemblyReference.cache
 C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.dll
 C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.pdb
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csproj.AssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.BLL.dll.config
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.DAL.dll
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.DAL.pdb
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\WebShop.DAL.dll.config
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alex\Documents\GitHub\WebShop\WebShop.BLL\obj\Debug\WebShop.BLL.csproj.CopyComplete
